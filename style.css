@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Opšti stilovi za telo stranice */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Stilizovanje dugmeta */
+.arrow-btn {
+  background-color: #ff7f50;  /* Narandžasta boja kocke */
+  color: white;
+  border: none;
+  padding: 20px 40px; /* Veće dugme */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px; /* Zaobljene ivice */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Razmak između tekstova i strelice */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efekat hover-a za dugme */
+.arrow-btn:hover {
+  background-color: #ff6347;  /* Promena boje pri hover-u */
+  transform: translateY(-4px); /* Efekat podizanja pri hover-u */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Strelica unutar dugmeta */
+.arrow-btn svg {
+  fill: white;  /* Strelica bela */
+  transition: transform 0.3s ease;  /* Animacija za strelicu */
+}
+
+
+/* Efekat hover-a za strelicu */
+.arrow-btn:hover svg {
+  transform: translateX(5px);  /* Pomera strelicu desno pri hover-u */
+}
+
+
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.content {
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo svg {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 90px;
+  margin-bottom: 10px;
+.button-color {
+  color: #F89880;  /* Narandžasta boja dugmeta */
+}
+
+}
+
+/* Stilizovanje za <p> tag */
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Stilizovanje boje teksta na narandžasto */
+.button-color {
+  color: #F89880;  /* Narandžasta boja dugmeta */
+}
+p1 {
+  color: #000000;  
+  font-size: 16px;  /* Isto kao za p tag */
+  margin-bottom: 20px;  /* Isto kao za p tag */
+}
+
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-form button {
+  background-color: #EE8B8B;
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.subscribe-form button svg {
+  fill: #ffffff;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Postavite veću širinu za logo */
+.logo {
+  position: fixed;    /* Fiksirajte logo na ekranu */
+  top: 10px;          /* Razmak od vrha stranice */
+  left: 10px;         /* Razmak od leve ivice */
+  z-index: 1000;      /* Osigurajte da logo bude ispred drugih elemenata */
+  width: 500px;       /* Povećana širina loga */
+  height: auto;       /* Visina se automatski prilagođava proporcionalno širini */
+  overflow: hidden;   /* Sakrijte deo koji izlazi izvan kontejnera */
+}
+
+/* Slika se automatski prilagođava širini div-a */
+.logo svg {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Obezbeđuje da logo bude u celosti vidljiv */
+}
+
+
+
+
